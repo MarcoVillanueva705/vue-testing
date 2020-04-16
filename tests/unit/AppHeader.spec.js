@@ -1,7 +1,7 @@
-import AppHeader from '@components/AppHeader'
+import AppHeader from '@components/AppHeader.vue'
 
 //Creates a block of tests, aka a 'test suite'
-describe('Appheader', () => {
+describe('AppHeader', () => {
 //Creates a Jest test
     test('If user is not logged in, do not show logout button', () => {
         //an assertion about the expected outcome
