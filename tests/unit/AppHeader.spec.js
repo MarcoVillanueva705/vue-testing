@@ -1,5 +1,5 @@
-import AppHeader from '@components/AppHeader'
 import { mount } from '@vue/test-utils'
+import { AppHeader } from "@components/AppHeader";
 //Creates a block of tests, aka a 'test suite'
 describe('AppHeader', () => {
 //Creates a Jest test
