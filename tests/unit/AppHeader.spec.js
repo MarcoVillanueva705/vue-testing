@@ -1,4 +1,5 @@
-
+import AppHeader from '@components/AppHeader'
+import { mount } from '@vue/test-utils'
 //Creates a block of tests, aka a 'test suite'
 describe('AppHeader', () => {
 //Creates a Jest test
@@ -6,9 +7,13 @@ describe('AppHeader', () => {
         //an assertion about the expected outcome
         //inside expect, the value to apply matchers against
         //toBe is a Jest matcher that checks that a value is what is expected 
-        expect(true).toBe(true)
+        const wrapper = mount(AppHeader)
+        expect(wrapper.find('button').isVisible()).toBe(false)
     })
-    test('If user is logged in, show logout button', () => {
-        expect(true).toBe(true)
+    test('If user is logged in, show logout button', async () => {
+        const wrapper = mount(AppHeader)
+        wrapper.setData({ loggedIn: true })
+        await wrapper.vm.$nextTick()
+        expect(wrapper.find('button').isVisible()).toBe(true)
     })
 })
