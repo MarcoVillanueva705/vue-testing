@@ -1,4 +1,4 @@
-import AppHeader from '@/components/AppHeader'
+import AppHeader from '@/components/AppHeader.vue';
 
 //Creates a block of tests, aka a 'test suite'
 describe('AppHeader', () => {
