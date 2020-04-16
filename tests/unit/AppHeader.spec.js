@@ -9,4 +9,7 @@ describe('Appheader', () => {
         //toBe is a Jest matcher that checks that a value is what is expected 
         expect(true).toBe(true)
     })
+    test('If user is logged in, show logout button', () => {
+        expect(true).toBe(true)
+    })
 })
